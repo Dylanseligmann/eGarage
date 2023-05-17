@@ -1,0 +1,157 @@
+/* FRONTPAGE HEIGHT */
+.frontpage{
+    height:100vh
+}
+
+/* NAVBAR */
+
+.logo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 90%;
+}
+
+.logoImg{
+    margin-top: auto;
+    height: 50px;
+    margin-left: 50px;
+}
+
+.navbar{
+    transition: 0.4s ease-in-out;
+}
+
+.navbar-scrolled{
+    transition: 1s ease-in-out;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.05);
+
+}
+
+.nav-masthead .nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+    font-size: 20px;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+    color: rgb(255, 255, 255);
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.nav-colored { background-color:#000; }
+.nav-transparent { background-color:transparent;}
+
+.offset-anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+
+.iconBox{
+    position: absolute;
+    margin-top: 90vh;
+
+}
+
+.icons, a{
+    text-align: end;
+    text-decoration: none;
+    justify-content: end;
+    font-size: 35px ;
+    padding: 1rem;
+    color:rgba(255, 255, 255, .5);
+    
+}
+
+a :hover{
+    color: white;
+
+}
+
+/* BACKGROUND */
+
+.bg-image{
+    height: 100vh;
+    width: 99vw;
+    object-fit: cover;
+    filter: brightness(120%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* MAIN */
+
+
+/* PRODUCT GRID */
+
+.surronLogo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 75%;
+    height: 250px;
+}
+
+
+.main{
+    text-align: center;
+}
+
+.dualTronLogo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 75%;
+    height: 250px;
+
+}
+
+.speedWayLogo{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 50%;
+    height: 250px;
+
+}
+
+.map{
+    width: 90%;
+    border-radius: 1%;
+}
+
+.ph-map-trifold{
+    font-size: 50px;
+}
+
+
+// media queries
+
+@media (max-width: 1000px) {
+    
+    .logoImg{
+        
+        margin-left: 0;
+    }
+
+    .logo{
+
+        width: auto;
+    }
+
+    .iconBox{
+        margin-top: 90vh;
+    }
+
+    .icons,a{
+        text-align: center;
+        padding: 0.7rem;
+    }
+
+}
+
