@@ -55,9 +55,10 @@
 }
 
 .carouselItem{
-    object-fit: cover;
-    height: 650px;
-    width: 1000px;
+    
+    height: 50vh;
+    width: auto;
+    margin: auto;
 }
 
 
