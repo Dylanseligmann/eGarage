@@ -1,86 +1,66 @@
-  /* NAVBAR */
-.logo {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%); 
-}
-
-.logoImg {
+/* NAVBAR */
+.navbar {
+  transition: 0.4s ease-in-out; }
+  .navbar .logo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%); }
+  .navbar .logoImg {
     height: 50px;
     margin-top: 0;
-    vertical-align: 0;
-}
-
-.ph-arrow-circle-left{
+    vertical-align: 0; }
+  .navbar .ph-arrow-circle-left {
+    font-size: 50px; }
+  .navbar .ph-arrow-circle-down {
     font-size: 50px;
-}
-
-.navbar {
-    transition: 0.4s ease-in-out; 
-}
-
-.navbar-brand {
+    justify-self: end; }
+  .navbar .ph-map-trifold {
+    font-size: 50px; }
+  .navbar .navbar-brand {
     transform: translateX(-50%);
     left: 50%;
-    position: absolute;
-}
-
-.navbar-scrolled {
-    transition: 1s ease-in-out;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.05); }
-
-.nav-masthead .nav-link {
+    position: absolute; }
+  .navbar .nav-masthead .nav-link {
     color: rgba(255, 255, 255, 0.5);
     border-bottom: .25rem solid transparent;
     font-size: 20px; }
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
+  .navbar .nav-masthead .nav-link:hover,
+  .navbar .nav-masthead .nav-link:focus {
     border-bottom-color: rgba(255, 255, 255, 0.25);
     color: white; }
-
-.nav-masthead .active {
+  .navbar .nav-masthead .active {
     color: #fff;
     border-bottom-color: #fff; }
-
-.nav-colored {
+  .navbar .nav-colored {
     background-color: #000; }
-
-.nav-transparent {
+  .navbar .nav-transparent {
     background-color: transparent; }
 
-.main{
-    margin-top: 6rem;
-}
+/* NAVBAR SCROLLED */
+.navbar-scrolled {
+  transition: 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.05); }
 
-.carouselItem{
-    
+/* MAIN */
+.main {
+  margin-top: 4rem; }
+  .main .carouselItem {
     height: 50vh;
     width: auto;
-    margin: auto;
-}
-
-
-.icons, a {
+    margin: auto; }
+  .main .icons a {
     text-align: end;
     text-decoration: none;
     font-size: 35px;
     padding: 1rem;
     color: rgba(255, 255, 255, 0.5); }
+    .main .icons a:hover {
+      color: white; }
 
-a :hover {
-    color: white; }
+.footer .map {
+  width: 90%;
+  border-radius: 1%; }
 
-
-  /* MAIN */
-  /* PRODUCT GRID */
-
-
-.map {
-    width: 90%;
-    border-radius: 1%; }
-
-.ph-map-trifold {
-    font-size: 50px; }
-
+.footer .ph-map-trifold {
+  font-size: 50px; }

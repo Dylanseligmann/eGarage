@@ -1,9 +1,11 @@
-/* GENERAL */
-
 
 /* FRONTPAGE HEIGHT */
 .frontpage {
   height: 100vh; }
+
+
+/* HEADER */
+
 
 /* NAVBAR */
 .logo {
@@ -45,12 +47,9 @@
 .nav-transparent {
   background-color: transparent; }
 
-.offset-anchor {
-  display: block;
-  position: relative;
-  visibility: hidden;
-  padding: 1.5rem;
-}
+
+/* SOCIAL ICONS FRONTPAGE */
+
 
 .iconBox {
   position: absolute;
@@ -73,6 +72,7 @@ a :hover {
   color: white; }
 
 /* BACKGROUND */
+
 .bg-image {
   height: 100vh;
   width: 99vw;
@@ -87,9 +87,9 @@ a :hover {
 /* PRODUCT GRID */
 
 .product-image {
-  /* height: 250px; */
   height: 30vw;
   object-fit: cover;
+  width: 100%;
 }
 
 .product a {
@@ -115,12 +115,17 @@ a :hover {
   width: 50%;
   height: 250px; }
 
+/* FOOTER */
+
 .map {
   width: 90%;
   border-radius: 1%; }
 
 .ph-map-trifold {
   font-size: 50px; }
+
+
+  /* MEDIA QUERIES */
 
 @media only screen and (max-width: 990px) {
   .logoImg {
@@ -129,9 +134,16 @@ a :hover {
     width: auto; }
   .iconBox {
     margin-top: 90vh; }
-  .icons, a {
+  .icons {
     text-align: center;
     padding: 0.7rem; }
 }
 
+/* ANCHOR */
 
+.offset-anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  padding: 1.5rem;
+}
