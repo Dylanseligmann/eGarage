@@ -35,7 +35,7 @@
     background-color: transparent; }
 
 /* NAVBAR SCROLLED */
-.navbar-scrolled {
+.navbar {
   transition: 1s ease-in-out;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(14px);
@@ -44,11 +44,13 @@
 
 /* MAIN */
 .main {
-  margin-top: 4rem; }
+  margin-top: 5rem; }
   .main .carouselItem {
     height: 50vh;
-    width: auto;
+    width: 80%;
     margin: auto; }
+  .main .carousel img {
+    object-fit: cover; }
   .main .icons a {
     text-align: end;
     text-decoration: none;

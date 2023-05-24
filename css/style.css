@@ -136,7 +136,9 @@ a :hover {
     margin-top: 90vh; }
   .icons {
     text-align: center;
-    padding: 0.7rem; }
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* ANCHOR */

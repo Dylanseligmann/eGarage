@@ -57,7 +57,7 @@
 
 /* NAVBAR SCROLLED */
 
-.navbar-scrolled {
+.navbar{
     transition: 1s ease-in-out;
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(14px);
@@ -68,13 +68,18 @@
   /* MAIN */
 
 .main{
-    margin-top: 4rem;
+    margin-top: 5rem;
     
     .carouselItem{
     
         height: 50vh;
-        width: auto;
+        width: 80%;
         margin: auto;
+    }
+    .carousel img{
+        // width: 50%;
+        // max-height: 80vh;
+        object-fit: cover;
     }
     .icons a {
         text-align: end;
