@@ -1,27 +1,23 @@
+// HEADER
+
 /* NAVBAR */
 
 .navbar{
 
-    transition: 0.4s ease-in-out; 
+    transition: 1s ease-in-out;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.05); 
 
-    .logo{
-        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%); 
-    }
-    .logoImg {
-        height: 50px;
-        margin-top: 0;
-        vertical-align: 0;
-    }
+
     .ph-arrow-circle-left{
         font-size: 50px;
     }
-    .ph-arrow-circle-down{
-        font-size: 50px;
-        justify-self: end;
-    }
 
-    .ph-map-trifold{
-        font-size: 50px;
+    .ph-shopping-cart{
+        font-size: 45px;
+    
     }
 
     .navbar-brand {
@@ -55,40 +51,72 @@
     }
 }
 
-/* NAVBAR SCROLLED */
 
-.navbar{
-    transition: 1s ease-in-out;
-    background: rgba(255, 255, 255, 0.1);
-    -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
-    border: 1px solid rgba(255, 255, 255, 0.05); }
+/* MAIN */
 
+// PRODUCT CARD
 
-  /* MAIN */
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
 
 .main{
-    margin-top: 5rem;
+    margin-top: 6rem;
     
-    .carouselItem{
+    .cartnBuy{
+
+        .btn{
+            margin: 0.5rem;
+        }
+
+        .ph-shopping-cart{
+            font-size: 25px;
     
-        height: 50vh;
-        width: 80%;
-        margin: auto;
+        }
+    
+        .btnCart{
+        
+            width: 124px;
+            margin-top: 1rem;
+        }
+    
+        .btnBuyNow {
+    
+            width: 124px;
+            margin-top: 1rem;
+            background-color: rgb(87, 148, 18);
+            border-color: rgb(102, 172, 21);
+            color: rgb(232, 230, 227);
+        }
     }
-    .carousel img{
-        // width: 50%;
-        // max-height: 80vh;
-        object-fit: cover;
-    }
-    .icons a {
-        text-align: end;
+
+
+    .icons ,a {
+        text-align: center;
         text-decoration: none;
         font-size: 35px;
         padding: 1rem;
         color: rgba(255, 255, 255, 0.5); 
         &:hover{
             color: white;
+        }
+    }
+
+    #btn-back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        display: none;
+    }
+
+    .ph-arrow-circle-up{
+        transition: 1s ease-in-out;
+        font-size: 50px;
+        &:hover{
+            color: white;
+            
         }
     }
 }
@@ -106,10 +134,5 @@
         font-size: 50px; 
     }
 }
-
-
-
-
-
 
 

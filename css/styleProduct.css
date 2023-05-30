@@ -1,19 +1,14 @@
 /* NAVBAR */
 .navbar {
-  transition: 0.4s ease-in-out; }
-  .navbar .logo {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%); }
-  .navbar .logoImg {
-    height: 50px;
-    margin-top: 0;
-    vertical-align: 0; }
+  transition: 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.05); }
   .navbar .ph-arrow-circle-left {
     font-size: 50px; }
-  .navbar .ph-arrow-circle-down {
-    font-size: 50px;
-    justify-self: end; }
-  .navbar .ph-map-trifold {
-    font-size: 50px; }
+  .navbar .ph-shopping-cart {
+    font-size: 45px; }
   .navbar .navbar-brand {
     transform: translateX(-50%);
     left: 50%;
@@ -34,30 +29,43 @@
   .navbar .nav-transparent {
     background-color: transparent; }
 
-/* NAVBAR SCROLLED */
-.navbar {
-  transition: 1s ease-in-out;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.05); }
-
 /* MAIN */
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
 .main {
-  margin-top: 5rem; }
-  .main .carouselItem {
-    height: 50vh;
-    width: 80%;
-    margin: auto; }
-  .main .carousel img {
-    object-fit: cover; }
-  .main .icons a {
-    text-align: end;
+  margin-top: 6rem; }
+  .main .cartnBuy .btn {
+    margin: 0.5rem; }
+  .main .cartnBuy .ph-shopping-cart {
+    font-size: 25px; }
+  .main .cartnBuy .btnCart {
+    width: 124px;
+    margin-top: 1rem; }
+  .main .cartnBuy .btnBuyNow {
+    width: 124px;
+    margin-top: 1rem;
+    background-color: #579412;
+    border-color: #66ac15;
+    color: #e8e6e3; }
+  .main .icons, .main a {
+    text-align: center;
     text-decoration: none;
     font-size: 35px;
     padding: 1rem;
     color: rgba(255, 255, 255, 0.5); }
-    .main .icons a:hover {
+    .main .icons:hover, .main a:hover {
+      color: white; }
+  .main #btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none; }
+  .main .ph-arrow-circle-up {
+    transition: 1s ease-in-out;
+    font-size: 50px; }
+    .main .ph-arrow-circle-up:hover {
       color: white; }
 
 .footer .map {
