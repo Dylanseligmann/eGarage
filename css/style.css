@@ -1,11 +1,14 @@
-
 /* FRONTPAGE HEIGHT */
 .frontpage {
   height: 100vh; }
-
-
-/* HEADER */
-
+  .frontpage .bg-image {
+    height: 100vh;
+    width: 99vw;
+    object-fit: cover;
+    filter: brightness(120%);
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 /* NAVBAR */
 .logo {
@@ -19,6 +22,13 @@
 
 .navbar {
   transition: 0.4s ease-in-out; }
+  .navbar .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: .25rem solid transparent;
+    font-size: 20px; }
+    .navbar .nav-link:hover {
+      border-bottom-color: rgba(255, 255, 255, 0.25);
+      color: white; }
 
 .navbar-scrolled {
   transition: 1s ease-in-out;
@@ -27,30 +37,7 @@
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.05); }
 
-.nav-masthead .nav-link {
-  color: rgba(255, 255, 255, 0.5);
-  border-bottom: .25rem solid transparent;
-  font-size: 20px; }
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-  color: white; }
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff; }
-
-.nav-colored {
-  background-color: #000; }
-
-.nav-transparent {
-  background-color: transparent; }
-
-
 /* SOCIAL ICONS FRONTPAGE */
-
-
 .iconBox {
   position: absolute;
   margin-top: 90vh; }
@@ -59,75 +46,50 @@
   text-align: end;
   text-decoration: none;
   justify-content: end;
-  font-size: 35px;
-}
+  font-size: 35px; }
 
 .icons a {
   text-decoration: none;
   padding: 1rem;
-  color: rgba(255, 255, 255, 0.5);
-}
+  color: rgba(255, 255, 255, 0.5); }
 
 a :hover {
   color: white; }
 
-/* BACKGROUND */
-
-.bg-image {
-  height: 100vh;
-  width: 99vw;
-  object-fit: cover;
-  filter: brightness(120%);
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-/* MAIN */
-
 /* PRODUCT GRID */
-
 .product-image {
   height: 30vw;
   object-fit: cover;
-  width: 100%;
-}
+  width: 100%; }
 
 .product a {
   text-decoration: none;
-  color: inherit;
-}
-
-.surronLogo {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
-  width: 75%;
-  height: 250px; }
+  color: inherit; }
 
 .main {
   text-align: center; }
-
-.dualTronLogo {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
-  width: 75%;
-  height: 250px; }
-
-.speedWayLogo {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
-  width: 50%;
-  height: 250px; }
+  .main .surronLogo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 75%;
+    height: 250px; }
+  .main .dualTronLogo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 75%;
+    height: 250px; }
+  .main .speedWayLogo {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(276deg) brightness(107%) contrast(104%);
+    width: 75%;
+    height: 250px; }
 
 /* FOOTER */
-
-.map {
+.footer .map {
   width: 90%;
   border-radius: 1%; }
 
-.ph-map-trifold {
-  font-size: 60px; 
-}
+.footer .ph-map-trifold {
+  font-size: 60px; }
 
-
-  /* MEDIA QUERIES */
-
+/* MEDIA QUERIES */
 @media only screen and (max-width: 990px) {
   .logoImg {
     margin-left: 0; }
@@ -138,15 +100,11 @@ a :hover {
   .icons {
     text-align: center;
     display: flex;
-    justify-content: center;
-  }
-}
+    justify-content: center; } }
 
 /* ANCHOR */
-
 .offset-anchor {
   display: block;
   position: relative;
   visibility: hidden;
-  padding: 1.5rem;
-}
+  padding: 1.5rem; }
